@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moksha'22</title>
+    
+
+    <script type="text/javascript">
+        function parseUA() {
+            var u = navigator.userAgent;
+            var u2 = navigator.userAgent.toLowerCase();
+            return {
+                trident: u.indexOf('Trident') > -1,
+                presto: u.indexOf('Presto') > -1,
+                webKit: u.indexOf('AppleWebKit') > -1,
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/),
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+                iPhone: u.indexOf('iPhone') > -1,
+                iPad: u.indexOf('iPad') > -1,
+                webApp: u.indexOf('Safari') == -1,
+                iosv: u.substr(u.indexOf('iPhone OS') + 9, 3),
+                weixin: u2.match(/MicroMessenger/i) == "micromessenger",
+                ali: u.indexOf('AliApp') > -1,
+            };
+        }
+        var ua = parseUA();
+
+        if (ua.mobile) {
+            location.href = './mobile.html';
+        }
+    </script>
+    <style>
+        #category-descriptions a {
+            color: #f06968;
+            text-decoration: underline;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/multi-page.css">
+    <link rel="stylesheet" href="./css/ferris-wheel.css">
+    <link rel="stylesheet" href="./css/carnival.css">
+    <link rel="stylesheet" href="css/event-section.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/pronite.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="icon" href="./images/SMlogo2.png" sizes="26x26">
+
+</head>
+<body>
+<header>
+    <div class="header-top clearfix">
+        <h1 class="l-left"><a href="#home">Moksha  Inno - NSUT</a></h1>
+        <a class="l-right toggle-menu" href="#">
+            <i></i>
+            <i></i>
+            <i></i>
+        </a>
+        
+        <a href="./events.html">
+            <button style="float: right; position: relative;
+                top: 10px;
+                right: 10px;
+                background-color: #f06968;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                cursor: pointer;
+                margin-right:10px;
+                ">Explore Events</button>
+        </a>
+    </div>
+
+    <nav class="hide">
+        <ul id="menu">
+            <li data-menuanchor="home">
+                <a href="#home" title="First Section">Home</a>
+            </li>
+            <li data-menuanchor="pronites">
+                <a href="#pronites" title="Second Section">Pronites</a>
+            </li>
+            <li data-menuanchor="events">
+                <a href="#events" title="Second Section">Events and Competitions</a>
+            </li>
+            <!--<li data-menuanchor="lookback">-->
+                <!--<a href="#lookback" title="Fourth Section">A Look Back</a>-->
+            <!--</li>-->
+            <!--<li data-menuanchor="lookback">-->
+                <!--<a href="#lookback" title="First Slide">First Slide</a>-->
+            <!--</li>-->
+            <li data-menuanchor="sponsors/1">
+                <a href="#sponsors" title="Second Slide">Sponsors</a>
+            </li>
+            <li data-menuanchor="contact">
+                <a href="#contact" title="Fifth Section">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<div id="fullpage">
+    
+    
+    <section class="vertical-scrolling">
+        <img src="/logo2021/highcute.png" alt="" srcset="" style="width: 100vw; height: 109vh;">
+    </section>
+    
+    <!-- <section class="vertical-scrolling">
+        <div class="ground" style="display:flex; align-items:auto; background-color: white;">
+            <img src="./logo2021/Artboard 1metallogo.png" alt="" style="
+                width: auto;
+                height: 80%;
+                margin: auto auto;
+                display: block;
+            ">
+        </div> 
+    </section> -->
+    
+
+    <section class="vertical-scrolling">
+        <div class="container-for-pronite-container">
+            <div class="pronite-container">
+                <h1 class="heading" style="font-size:4rem">Pronites</h1>
+                <div class="card">
+
+                    <div class="card__item">
+                        <h2 class="card__item-title">Star Gaze</h2>
+                        <a href="#" title="Star Gaze" target="_blank">
+                            <div class="atvImg">
+                                <img src="https://png.pngtree.com/png-vector/20190322/ourmid/pngtree-coming-soon-vector-template-design-illustration-png-image_859655.jpg">
+
+                                <div class="atvImg-layer" data-img="https://png.pngtree.com/png-vector/20190322/ourmid/pngtree-coming-soon-vector-template-design-illustration-png-image_859655.jpg"></div>
+
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="card__item">
+                        <h2 class="card__item-title">Exotic Memorabilia</h2>
+                        <a href="#" title="Exotic Memorabilia" target="_blank">
+                            <div class="atvImg">
+                                <img src="https://png.pngtree.com/png-vector/20190322/ourmid/pngtree-coming-soon-vector-template-design-illustration-png-image_859655.jpg">
+
+                                <div class="atvImg-layer" data-img="https://png.pngtree.com/png-vector/20190322/ourmid/pngtree-coming-soon-vector-template-design-illustration-png-image_859655.jpg"></div>
+
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="card__item">
+                        <h2 class="card__item-title">Extragavanza</h2>
+                        <a href="#" target="_blank">
+                            <div class="atvImg">
+                                <img src="https://png.pngtree.com/png-vector/20190322/ourmid/pngtree-coming-soon-vector-template-design-illustration-png-image_859655.jpg">
+
+                                <div class="atvImg-layer" data-img="https://png.pngtree.com/png-vector/20190322/ourmid/pngtree-coming-soon-vector-template-design-illustration-png-image_859655.jpg"></div>
+
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="vertical-scrolling">
+        <div style="display:flex; flex-wrap:wrap;">
+        <div style="width:40%;">
+            <div style="text-align:center; width: 100%;" class="container-event-icons">
+                <header id="event-header">
+                    <ul class="breadcrumbs">
+                        <li style="color:#fff">Click on a link below to explore the various events at Moksha'20</li>
+                        <!--     <li><a href="#">Global Outlook</a></li>
+                            <li><a href="#">Europe</a></li> -->
+                    </ul>
+
+                </header>
+                <div id="category-descriptions" style="max-width:500px; height: 140px; background:white; margin:20px auto; border-radius:20px 20px 20px 20px; color:#202020; display:flex; justify-content: space-around; flex-direction:column;">
+                    <a style="display: none;" href="./events.html"><h3 class="event-head individual-head">Literature</h3></a>
+                    <p class="event-head individual-head" style="display:none; padding-left:5%; padding-right:5%;">An amazing place to let your heart out, Moksha provides you the platform to show off to an a  audience.</p>
+                    <a style="display: none;" href="./events.html"><h3 class="event-head team-head">Dance</h3></a>
+                    <p class="event-head team-head" style="display:none; padding-left:5%; padding-right:5%;">Participate as a team and win exciting prizes! Some of these events may allow on-site team formation.</p>
+                    <a style="display: none;" href="./events.html"><h3 class="event-head individual-head">Drama</h3></a>
+                    <p class="event-head individual-head" style="display:none; padding-left:5%; padding-right:5%;">Events organised by student societies at NSUT. Also lists events meant for other college societies to participate in.</p>
+                    <a style="display: none;" href="./events.html"><h3 class="event-head individual-head">Music</h3></a>
+                    <p class="event-head individual-head" style="display:none; padding-left:5%; padding-right:5%;">Witness some of the most amazing performances across genres. You can also register as a participant.</p>
+                    <a style="display: none;" href="./events.html"><h3 class="event-head individual-head">Misc. Events</h3></a>
+                    <p class="event-head individual-head" style="display:none; padding-left:5%; padding-right:5%;">Cultural fests are supposed to be fun. This category includes all the fun events not included before.</p>
+
+                </div>
+                <div class="main-nav" style="display: flex; width: 100%; margin:20px auto;">
+
+                    <ul>
+                        <li data-id="1" data-target="individual-info" class="weather active">
+                            <!--         <div class="menuicon fa fa-bars"></div> -->
+
+                            <div class="icon fab fa-angellist fa-3x"></div>
+                            <span>Literature Events</span>
+                        </li>
+
+
+                        <li data-id="2" data-target="team-info" class="gallery">
+                            <!--         <div class="menuicon fa fa-bars"></div> -->
+                            <div class="icon fas fa-user-friends fa-2x"></div>
+                            <span>Dance Events</span>
+                        </li>
+
+
+                        <li data-id="3" data-target="society-info" class="history">
+                            <!--         <div class="menuicon fa fa-bars"></div> -->
+
+                            <div class="icon fas fa-theater-masks fa-2x"></div>
+                            <span>Drama Events</span>
+                        </li>
+
+
+                        <li data-id="4" data-target="performance-info" class="likes">
+                            <!--         <div class="menuicon fa fa-bars"></div> -->
+
+                            <div class="icon fas fa-music fa-2x"></div>
+                            <span>Music Events</span>
+                        </li>
+
+
+                        <li data-id="5" data-target="misc-info" class="comments">
+                            <!--         <div class="menuicon fa fa-bars"></div> -->
+
+                            <div class="icon fa fa-mask fa-2x"></div>
+                            <span>Misc. Events</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <div style="width:60%;">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="./images/individual.jpg" style="width:100%">
+                    <div style="font-size:2.5vmax;" class="text">Lone Wolves</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="./images/team.jpg" style="width:100%">
+                    <div style="font-size:2.5vmax;" class="text">Teams</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="./images/society.jpg" style="width:100%">
+                    <div style="font-size:2.5vmax;" class="text">For College Societies</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="./images/performance.jpg" style="width:100%">
+                    <div style="font-size:2.5vmax;" class="text">Perform to Fame</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="./images/misc.jpg" style="width:100%">
+                    <div style="font-size:2.5vmax;" class="text">Attend For Fun</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+            <div class="video-box" style="text-align:center; width: 40%; display: inline-block;">
+                <!--<iframe src="https://drive.google.com/file/d/1JqoKLBJ9KN7Q3eJz4mfHD12N3Tg198uu/preview" width="640" height="480"></iframe>-->
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="vertical-scrolling">
+        <!--<h3>Events</h3>-->
+        <div class="horizontal-scrolling" style="background: white;">
+            <img style="display: block; margin: 0 auto; max-width: 90%; max-height: 90%; height: auto;" src="./images/past-sponsors1.jpeg" alt="">
+        </div>
+        <div class="horizontal-scrolling" style="background: white;">
+            <img style="display: block; margin: 0 auto; max-width: 90%; max-height: 90%; height: auto;" src="./images/past-sponsors2.jpeg" alt="">
+        </div>
+        <div class="horizontal-scrolling" style="background: white;">
+            <img style="display: block; margin: 0 auto; max-width: 90%; max-height: 90%; height: auto;" src="./images/past-sponsors3.jpeg" alt="">
+        </div>
+    </section>
+    <section class="vertical-scrolling">
+        <div class="contact">
+
+
+        <div class="contact-details">
+            <h3>
+                CONTACT US
+            </h3>
+            <div class="email-text">
+                Interested in partnering with Moksha? <br>
+                Use the information below to reach out to us<br>
+                <div style="font-size:0.8rem">For general queries, send us an email at moksha@nsut.ac.in </div>
+                <div class="c-common-text" style="border: 15px solid rgba(255,255,255,0.2); padding: 30px; min-width:273px; width:50%; margin-bottom:10px;">
+                    <!--<h2 class="pre-header" style="font-size:20px; margin-bottom:10px;">Let's Talk!</h2>-->
+                    <!--<   h1>Dev is waving at you!</h1>-->
+                    <div style="font-size:16px;">
+                        <!--<span>For Sponsorship Enquiries</span>-->
+                        <ul>
+                            <li>Abhinav Bajaj</li>
+                            <li>Chief Convener, Moksha ' 21</li>
+                            <li>Phone: +91 89298 81258 </li>
+                            <!--<li>Fax: +1 999 888 666</li>-->
+                        </ul>
+                    </div>
+                </div>
+                <!--<div class="c-common-text" style="border: 15px solid rgba(255,255,255,0.2); padding: 30px; min-width:273px; width:50%; margin-bottom:10px;">-->
+                    <!--&lt;!&ndash;<h2 class="pre-header" style="font-size:20px; margin-bottom:10px;">Let's Talk!</h2>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<   h1>Dev is waving at you!</h1>&ndash;&gt;-->
+                    <!--<div style="font-size:16px;">-->
+                        <!--&lt;!&ndash;<span>For Sponsorship Queries</span>&ndash;&gt;-->
+                        <!--<ul>-->
+                            <!--<li>Nishant Chahar</li>-->
+                            <!--<li>Head of Sponsorship, Moksha 20</li>-->
+                            <!--<li>Phone: +91 813 062 4192 </li>-->
+                            <!--&lt;!&ndash;<li>Fax: +1 999 888 666</li>&ndash;&gt;-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<form class="form-horizontal" role="form" method="post" action="contact.php">-->
+
+                    <!--<div class="form-group">-->
+                        <!--<div class="col-sm-12">-->
+                            <!--<input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="form-group">-->
+                        <!--<div class="col-sm-12">-->
+                            <!--<input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>-->
+
+                    <!--<button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">-->
+                        <!--<div class="social-button">-->
+                            <!--<i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>-->
+                        <!--</div>-->
+
+                    <!--</button>-->
+
+                <!--</form>-->
+            </div>
+        </div>
+        <div class="candy-wrapper">
+            <div class="container">
+                <!-- FACE 1 -->
+
+                <section>
+                    <!-- Base -->
+                    <div>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <!-- Face -->
+                    <div>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <!-- Eyes -->
+                    <div>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <!-- Luminosity -->
+                    <div>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <!-- Mouth -->
+                    <div>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                </section>
+
+                <!-- Face 2-->
+                <section>
+                    <!-- Base -->
+                    <div>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <!-- Face -->
+                    <div>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <!-- Eyes -->
+                    <div>
+                        <ul>
+                            <!-- Left -->
+                            <li>
+                                <div></div>
+                            </li>
+
+                            <!-- Right -->
+                            <li>
+                                <div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Reflection -->
+                    <div>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <!-- Mouth -->
+                    <div>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="social-handles">
+                <div class="name">Follow Us For Updates!</div>
+                <div class="buttons">
+                    <div class="social-button"> <a href="https://twitter.com/nsit_moksha" target="_blank" ><i class="fab fa-twitter"></i></a></div>
+                    <div class="social-button"> <a href="https://www.instagram.com/mokshansut" target="_blank" ><i class="fab fa-instagram"></i></a></div>
+                    <div class="social-button"> <a href="https://www.facebook.com/mokshansut/" target="_blank" ><i class="fab fa-facebook"></i></a></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+<script src="./js/fullpage-script.js"></script>
+<script src="./js/atvimg.js"></script>
+<script src="./js/animals.js"></script>
+</body>
+</html>
