@@ -1,4 +1,4 @@
-const text = document.getElementById('Layer4');
+const text = document.getElementById('text');
 const bg3 = document.getElementById('Layer1');
 const bg = document.getElementById('Layer2');
 const bg2 = document.getElementById('Layer3');
@@ -86,8 +86,8 @@ window.addEventListener('resize', () => {
 
 
 // Loader
-const loader = document.querySelector(".animation-container");
+const loader = document.querySelector(".animation-wapper");
 
 setTimeout(() => {
-  loader.classList.add("hidden");
+  loader.classList.add("hidden2");
 }, 5001);
