@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+body{
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #0a2a43; */
+    z-index: 100;
+    mix-blend-mode: color;
+    
+
+}
+section::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    /* background: linear-gradient(to top,#0a2a43,transparent); */
+    z-index: 100;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+
+.img2{
+    z-index: 2;
+}
+
+#Layer4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    object-position: 20% 20%;
+}
+
+
+
+#logoimg{
+    height: 200px;
+    width: 200px;;
+    /* transition: 4s ease-in-out; */
+    /* transition: transform ease-out 0.3s; */
+    transition: 0.4s ease-in;
+    
+    justify-content: space-around;
+}
+#logo2img{
+    transition: 0.4s ease-in ;
+}
+
+
+.scrolled{
+    height: 40px;
+    /* background: rgba(134, 55, 55, 0.9); */
+    color: blue;
+    opacity: 0;
+    transition: 5 ease-in-out;
+    /* display: none; */
+}
+
+.logo2{
+    position: absolute;
+    height: 80px;
+    width: 75px;
+    top: 75px;
+    left: 50px;
+}
+.logo{
+    position: relative;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+
+
+
+.noCollapse .navbar{
+    display: flex;
+    padding: 15px;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    z-index: 300;
+    /* font-size: 1000px; */
+
+}
+.companyName{
+    font-size: 35px;
+    color: white;
+    position: fixed;
+    top: 16px;
+    left: 30px;
+    z-index: 300;
+    height: 200px;
+    width: 200px;
+}
+.noCollapse .navList{
+    display: flex;
+    position: fixed;
+    top: 31px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* transition: opacity 0s ; */
+
+}
+.noCollapse .navItem{
+    list-style: none;
+    position: relative;
+    padding: 0 3px;
+
+}
+.noCollapse .navLink{
+    color: #eee;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 2px;
+
+}
+
+.collapse .navbar{
+    width:16%;
+    height:90%;
+    padding: 0 130px;
+    background-color:#262626;
+    position:fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13% 87% 0% 100% / 32% 0% 100% 68% ;
+    transition: background-color 0.8s cubic-bezier(1,0,0,1);
+    z-index: 300;
+}
+
+.change{
+    background-color: rgba(0, 0, 0, 1)!important;
+}
+
+.collapse .hamburgerMenu{
+    width: 35px;
+    height:30px;
+    position: fixed;
+    top: 28px;
+    right: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.collapse .line{
+    width:100%;
+    height:3px;
+    background-color: chocolate;
+    transition: all 0.8s;
+}
+
+ .collapse  .change .line1{
+    transform: rotateZ(-405deg) translate(-8px,6px);
+}
+
+ .collapse .change .line2{
+    opacity: 0;
+}
+ .collapse .change .line3{
+    transform: rotateZ(405deg) translate(-8px,-6px);
+}
+
+.collapse .navList{
+    text-align: right;
+    opacity: 0;
+    transition: opacity .8s cubic-bezier(1,0,0,1);
+    padding: 30px;
+    
+}
+
+.collapse .change .navList{
+    opacity: 1;
+
+}
+
+.collapse .navItem{
+    list-style: none;
+    pointer-events: none;
+    margin: 10px;
+}
+
+ .collapse .change .navItem{
+    pointer-events: all;
+}
+
+.collapse .navLink{
+    text-decoration: none;
+    font-size: 20px;
+    color: #eee;
+    font-weight: 300;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+ .navLink::before,.navLink::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: chocolate;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+ .navLink::after{
+    bottom: 0;
+    transform-origin: right;
+}
+
+ .navLink::before{
+    top: 0;
+    transform-origin: left;
+}
+
+.navLink:hover::before,.navLink:hover::after{
+    transform:scaleX(1);
+}
+
+@media(max-width :776px){
+    .noCollapse .navLink{
+        font-size: 18px;
+        
+    }
+    .noCollapse .navList{
+        top: 34px;
+    }
+
+    .noCollapse .navbar{
+        background-color: transparent;
+    }
+}
+@media(max-width:680px){
+    .noCollapse .navList{
+        opacity: 0;
+    }
+}
+@media(max-width:450px) {
+   .collapse .navbar{    
+       padding: 0 120px;
+    } 
+}
+@media(max-width:400px) {
+   .collapse .navbar{    
+       padding: 0 110px;
+    } 
+    .companyName{
+        font-size: 30px;
+    }
+    .collapse .hamburgerMenu{
+        top:26px;
+    }
+
+}
+
+.navbar{
+    position: absolute;
+    background-color: transparent;
+}
+
+.logo{
+    position: absolute;
+    top: 20px;
+    height: 200px;
+    width: 200px;
+    transform: translate(-50%,-50%);
+    transition: 0.4s ease-in;
+}
+
+.logo2{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 90px;
+    width: 75px;
+    transform: translate(-50%,-50%);
+    transition: 0.4s ease-in;
+}
+
+#logoImg3{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 90px;
+    width: 75px;
+    transform: translate(-50%,-50%);
+    transition: 0.4s ease-in;
+}
