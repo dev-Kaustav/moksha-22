@@ -82,3 +82,12 @@ window.addEventListener('resize', () => {
         object3.classList.remove('hidden');
     }
 })
+
+
+
+// Loader
+const loader = document.querySelector(".animation-container");
+
+setTimeout(() => {
+  loader.classList.add("hidden");
+}, 5001);
