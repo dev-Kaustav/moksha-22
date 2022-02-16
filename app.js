@@ -8,6 +8,11 @@ window.addEventListener('scroll', function () {
     bg2.style.top = value * 0.7 + 'px';
     bg3.style.top = value * 0.1 + 'px';
     text.style.top = value * 0.4 + 'px';
+    if (value >= 100) {
+        text.classList.add('blur');
+    } else {
+        text.classList.remove('blur');
+    }
 })
 
 let object = document.getElementById("logoImg")
