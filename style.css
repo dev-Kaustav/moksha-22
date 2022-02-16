@@ -281,8 +281,8 @@ section img {
 .logo {
     position: absolute;
     top: 20px;
-    height: 150px;
-    width: 220px;
+    height: 120px;
+    width: 180px;
     transform: translate(-50%, -50%);
     transition: 0.4s ease-in;
 }
@@ -291,8 +291,8 @@ section img {
     position: absolute;
     top: 14px;
     left: 5px;
-    height: 90px;
-    width: 170px;
+    height: 75px;
+    width: 140px;
     transform: translate(-50%, -50%);
     transition: 0.4s ease-in;
 }
@@ -301,14 +301,13 @@ section img {
     position: absolute;
     top: 30px;
     left: 50px;
-    height: 90px;
-    width: 170px;
-
+    height: 75px;
+    width: 140px;
     transform: translate(-50%, -50%);
     transition: 0.4s ease-in;
 }
 
-#text {
+.text {
     /* background-image: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 60%, rgba(255, 255, 255, 0.7) 85%, rgba(255, 255, 255, 0.3) 90%, rgba(255, 255, 255, 0.1) 95%, rgba(255, 255, 255, 0) 100%); */
     background-image: linear-gradient(rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
     background-clip: text;
@@ -324,6 +323,9 @@ section img {
     white-space: nowrap;
     line-height: 0.6;
     padding-top: 50px;
+    /* filter: blur(1px); */
+    opacity: 1;
+    transition: filter 0.2s ease-in;
 }
 
 @media screen and (max-width: 800px) {
@@ -344,7 +346,8 @@ section img {
     top: 0;
     left: 0;
     overflow: hidden;
-    z-index: 10000000000;
+    z-index: 10000;
+    transition: all 0.5s ease-in;
 }
 
 .Layer_2 {
@@ -375,8 +378,8 @@ section img {
 }
 
 .hidden2 {
-    display: none;
     z-index: -20;
+    opacity: 0;
 }
 
 @keyframes fliker {
@@ -500,4 +503,8 @@ section img {
     width: 50vw;
   }
 
+}
+
+.blur {
+    filter: blur(10px);
 }
