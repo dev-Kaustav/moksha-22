@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Bebas Neue", cursive;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", cursive;
+
 }
 
 body {
@@ -272,51 +273,6 @@ section img {
     transform: scaleX(1);
 }
 
-@media (max-width: 776px) {
-    .noCollapse .navLink {
-        font-size: 18px;
-    }
-
-    .noCollapse .navList {
-        top: 34px;
-    }
-
-    .noCollapse .navbar {
-        background-color: transparent;
-    }
-}
-
-@media (max-width: 680px) {
-    .noCollapse .navList {
-        opacity: 0;
-    }
-}
-
-@media (max-width: 450px) {
-    .collapse .navbar {
-        padding: 0 120px;
-    }
-}
-
-@media (max-width: 400px) {
-    .collapse .navbar {
-        padding: 0 110px;
-    }
-
-    .companyName {
-        font-size: 30px;
-    }
-
-    .collapse .hamburgerMenu {
-        top: 26px;
-    }
-
-    .spinner:before {
-        width: 50vw;
-        height: 50vw;
-    }
-}
-
 .navbar {
     position: absolute;
     background-color: transparent;
@@ -496,7 +452,52 @@ section img {
 }
 
 @keyframes spinner {
-    to {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+
+@media (max-width: 776px) {
+  .noCollapse .navLink {
+    font-size: 18px;
+  }
+  .noCollapse .navList {
+    top: 34px;
+  }
+
+  .noCollapse .navbar {
+    background-color: transparent;
+  }
+}
+@media (max-width: 680px) {
+  .noCollapse .navList {
+    opacity: 0;
+  }
+}
+@media (max-width: 450px) {
+  .collapse .navbar {
+    padding: 0 120px;
+  }
+}
+@media (max-width: 400px) {
+  .collapse .navbar {
+    padding: 0 110px;
+  }
+  .companyName {
+    font-size: 30px;
+  }
+  .collapse .hamburgerMenu {
+    top: 26px;
+  }
+  .spinner:before {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  .Layer_2{
+    width: 50vw;
+  }
+
 }
