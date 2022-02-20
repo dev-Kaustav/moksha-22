@@ -23,7 +23,6 @@ body::-webkit-scrollbar {
     filter: blur(10px);
 }
 
-
 section {
     position: relative;
     width: 100%;
@@ -476,6 +475,7 @@ section img {
     top: 34px;
   }
 
+
   .noCollapse .navbar {
     background-color: transparent;
   }
@@ -508,9 +508,10 @@ section img {
   .Layer_2{
     width: 50vw;
   }
-  
+
   .blur{
     filter: blur(1px);
+
   }
 
 }
