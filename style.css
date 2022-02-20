@@ -12,10 +12,15 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow-x: hidden;
+    background-color: #0f1623;
 }
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+.blur {
+    filter: blur(10px);
 }
 
 section {
@@ -470,6 +475,7 @@ section img {
     top: 34px;
   }
 
+
   .noCollapse .navbar {
     background-color: transparent;
   }
@@ -502,9 +508,9 @@ section img {
   .Layer_2{
     width: 50vw;
   }
+  .blur{
+      filter: blur(1px);
+  }
 
 }
 
-.blur {
-    filter: blur(10px);
-}
