@@ -2,9 +2,9 @@
 
 * {
 
-  margin: 0;
-  padding: 0;
-  font-family: "Bebas Neue", cursive;
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", cursive;
 
 }
 
@@ -327,7 +327,6 @@ section img {
     white-space: nowrap;
     line-height: 0.6;
     padding-top: 50px;
-    /* filter: blur(1px); */
     opacity: 1;
     transition: filter 0.2s ease-in;
 }
@@ -459,59 +458,140 @@ section img {
 }
 
 @keyframes spinner {
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
 
 
 
 @media (max-width: 776px) {
-  .noCollapse .navLink {
-    font-size: 18px;
-  }
-  .noCollapse .navList {
-    top: 34px;
-  }
+    .noCollapse .navLink {
+        font-size: 18px;
+    }
+
+    .noCollapse .navList {
+        top: 34px;
+    }
 
 
-  .noCollapse .navbar {
-    background-color: transparent;
-  }
+    .noCollapse .navbar {
+        background-color: transparent;
+    }
 }
+
 @media (max-width: 680px) {
-  .noCollapse .navList {
-    opacity: 0;
-  }
+    .noCollapse .navList {
+        opacity: 0;
+    }
 }
+
 @media (max-width: 450px) {
-  .collapse .navbar {
-    padding: 0 120px;
-  }
+    .collapse .navbar {
+        padding: 0 120px;
+    }
 }
+
 @media (max-width: 400px) {
-  .collapse .navbar {
-    padding: 0 110px;
-  }
-  .companyName {
-    font-size: 30px;
-  }
-  .collapse .hamburgerMenu {
-    top: 26px;
-  }
-  .spinner:before {
-    width: 60vw;
-    height: 60vw;
-  }
+    .collapse .navbar {
+        padding: 0 110px;
+    }
 
-  .Layer_2{
-    width: 50vw;
-  }
+    .companyName {
+        font-size: 30px;
+    }
 
-  .blur{
-    filter: blur(1px);
+    .collapse .hamburgerMenu {
+        top: 26px;
+    }
 
-  }
+    .spinner:before {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .Layer_2 {
+        width: 50vw;
+    }
+
+    .blur {
+        filter: blur(1px);
+
+    }
 
 }
 
+.register-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+    top: 118vh;
+}
+
+
+.register-button {
+    z-index: 200;
+    position: relative;
+    padding: 19px 22px;
+    transition: all .2s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.register-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: block;
+    border-radius: 28px;
+    background:rgba(194, 130, 133,0.5);
+    width: 56px;
+    height: 56px;
+    transition: all .3s ease;
+}
+
+.register-text {
+    position: relative;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.register-button svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: rgb(255, 250, 250);
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all .3s ease;
+}
+
+.register-button:hover::before {
+    width: 100%;
+    background: rgba(194, 130, 133,0.8);
+}
+
+.register-button:hover .register-text{
+    color: black;
+    font-weight: 600;
+}
+
+.register-button:hover svg {
+    transform: translateX(0px);
+    stroke: black;
+}
+
+.register-button:active {
+    transform: scale(0.96);
+}
