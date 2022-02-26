@@ -548,7 +548,8 @@ section img {
     z-index: 0;
     display: block;
     border-radius: 28px;
-    background:rgba(194, 130, 133,0.5);
+    /* background:rgba(194, 130, 133,0.5); */
+    background:rgb(0, 0, 0,0.9);
     width: 56px;
     height: 56px;
     transition: all .3s ease;
@@ -579,7 +580,8 @@ section img {
 
 .register-button:hover::before {
     width: 100%;
-    background: rgba(194, 130, 133,0.8);
+    /* background: rgba(194, 130, 133,0.8); */
+    background: rgba(255, 255, 255,0.8);
 }
 
 .register-button:hover .register-text{
